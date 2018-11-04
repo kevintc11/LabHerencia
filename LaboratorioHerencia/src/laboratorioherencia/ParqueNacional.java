@@ -9,7 +9,7 @@ package laboratorioherencia;
  *
  * @author Kevin Trejos
  */
-public class ParqueNacional extends ZonasProtegidas{
+public class ParqueNacional extends ZonasProtegidas {
 
     public ParqueNacional() {
         this("","",0);
@@ -24,15 +24,6 @@ public class ParqueNacional extends ZonasProtegidas{
         return "ParqueNacional{" + super.toString() +  '}';
     }
 
-    @Override
-    public String information() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int totalRevenues() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     
 }

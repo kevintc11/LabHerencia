@@ -23,14 +23,5 @@ public class PropiedadPrivada extends RefugioVidaSilvestre{
         return "PropiedadPrivada{" + super.toString() + '}';
     }
 
-    @Override
-    public String information() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int totalRevenues() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }

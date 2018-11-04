@@ -52,7 +52,5 @@ public abstract class ZonasProtegidas {
     public String toString() {
         return "ZonasProtegidas{" + "name=" + name + ", province=" + province + ", montoFinal=" + montoFinal + '}';
     }
-        
-    public abstract String information();
-    public abstract int totalRevenues();
+       
 }

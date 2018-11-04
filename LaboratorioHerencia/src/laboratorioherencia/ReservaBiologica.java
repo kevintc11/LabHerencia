@@ -24,15 +24,6 @@ public class ReservaBiologica extends ZonasProtegidas{
         return "ReservaBiologica{"+ super.toString() + '}';
     }
 
-    @Override
-    public String information() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int totalRevenues() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     
 }

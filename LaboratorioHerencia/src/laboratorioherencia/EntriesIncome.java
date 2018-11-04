@@ -7,11 +7,11 @@ package laboratorioherencia;
 
 /**
  *
- * @author Kevin Trejos
+ * @author Nacho
  */
-public interface State {
-    
-    public abstract double subvention();
+public interface EntriesIncome {
+    public abstract double Costarican();
+    public abstract double Foreign();
     public abstract double calculateAmount();
-    
+
 }

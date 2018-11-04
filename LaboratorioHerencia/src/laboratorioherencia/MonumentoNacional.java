@@ -23,10 +23,5 @@ public abstract class MonumentoNacional extends ZonasProtegidas{
         return "MonumentoNacional{" + super.toString()+ '}';
     }
 
-    @Override
-    public abstract int totalRevenues();
-
-    @Override
-    public abstract String information();
     
 }

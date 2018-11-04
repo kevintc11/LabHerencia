@@ -25,14 +25,6 @@ public class PatrimonioCultural extends MonumentoNacional{
         return "PatrimonioCultural{" + super.toString() + '}';
     }
 
-    @Override
-    public int totalRevenues() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String information() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
     
 }

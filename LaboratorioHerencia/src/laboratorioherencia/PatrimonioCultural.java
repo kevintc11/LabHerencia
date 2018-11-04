@@ -34,11 +34,8 @@ public class PatrimonioCultural extends MonumentoNacional implements EntriesInco
 
     @Override
     public String toString() {
-        return super.toString() + "PatrimonioCultural{" + "pib=" + pib + ", costaRicanVisitors=" + costaRicanVisitors + ", foreignVisitors=" + foreignVisitors + '}';
+        return super.toString() + "PatrimonioCultural" + "Amount Income = " + calculateAmount();
     }
-
-    
-    
 
     
     public  double Costarican(){

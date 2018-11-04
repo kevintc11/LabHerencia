@@ -24,7 +24,7 @@ public class ReservaBiologica extends ZonasProtegidas implements State{
 
     @Override
     public String toString() {
-        return "ReservaBiologica{"+ super.toString() + "anual amount:" + anualAmount + '}';
+        return  "ReservaBiologica{" + super.toString() + "Amount Income = " + calculateAmount() ;
     }
 
     @Override

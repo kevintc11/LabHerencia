@@ -20,7 +20,7 @@ public abstract class MonumentoNacional extends ZonasProtegidas{
 
     @Override
     public String toString() {
-        return super.toString() + "MonumentoNacional{" + '}';
+        return "MonumentoNacional " + super.toString() ;
     }
 
     

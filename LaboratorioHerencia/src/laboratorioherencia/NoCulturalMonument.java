@@ -28,7 +28,7 @@ public class NoCulturalMonument extends MonumentoNacional implements EntriesInco
 
     @Override
     public String toString() {
-        return super.toString() + "NoCulturalMonument{" + "costaRicanVisitors=" + costaRicanVisitors + ", foreignVisitors=" + foreignVisitors + '}';
+        return super.toString() + " NoCulturalMonument " + "Amount Income = " + calculateAmount();
     }
  
     

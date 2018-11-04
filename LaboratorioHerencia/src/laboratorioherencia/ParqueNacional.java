@@ -22,8 +22,8 @@ public class ParqueNacional extends ZonasProtegidas implements State, EntriesInc
         this("","",0,0,0,0);
     }
 
-    public ParqueNacional(String name, String province, int income, int electricClients, int costaRicanVisitors,int foreignVisitors) {
-        super(name, province, income);
+    public ParqueNacional(String name, String province, double montoFinal, int electricClients, int costaRicanVisitors,int foreignVisitors) {
+        super(name, province, montoFinal);
         this.electricClients = electricClients;
         this.costaRicanVisitors = costaRicanVisitors;
         this.foreignVisitors = foreignVisitors;
@@ -31,8 +31,11 @@ public class ParqueNacional extends ZonasProtegidas implements State, EntriesInc
 
     @Override
     public String toString() {
-        return "ParqueNacional{" + super.toString() +  '}';
+        return super.toString() + "ParqueNacional{" + "electricClients=" + electricClients + ", costaRicanVisitors=" + costaRicanVisitors + ", foreignVisitors=" + foreignVisitors + '}';
     }
+
+    
+    
 
     public double subvention(){
         double result = TAX * electricClients;

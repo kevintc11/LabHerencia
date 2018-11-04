@@ -14,14 +14,17 @@ public abstract class MonumentoNacional extends ZonasProtegidas{
     public MonumentoNacional() {
     }
 
-    public MonumentoNacional(String name, String province, int income) {
-        super(name, province, income);
+    public MonumentoNacional(String name, String province, double montoFinal) {
+        super(name, province, montoFinal);
     }
 
     @Override
     public String toString() {
-        return "MonumentoNacional{" + super.toString()+ '}';
+        return super.toString() + "MonumentoNacional{" + '}';
     }
+
+    
+    
 
     
 }

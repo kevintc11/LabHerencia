@@ -32,7 +32,7 @@ public class ParqueNacional extends ZonasProtegidas implements State, EntriesInc
 
     @Override
     public String toString() {
-        return super.toString() + "ParqueNacional{" + "electricClients=" + electricClients + ", costaRicanVisitors=" + costaRicanVisitors + ", foreignVisitors=" + foreignVisitors + '}';
+        return "ParqueNacional{" + super.toString() + "monto final = " + calculateAmount() + '}';
     }   
 
     public double subvention(){

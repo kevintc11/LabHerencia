@@ -41,7 +41,7 @@ public abstract class ZonasProtegidas {
 
     @Override
     public String toString() {
-        return "ZonasProtegidas{" + "name=" + name + ", province=" + province + '}';
+        return "{" + "name=" + name + ", province=" + province + '}';
     }
 
 

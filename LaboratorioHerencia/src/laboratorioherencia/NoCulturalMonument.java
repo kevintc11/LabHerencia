@@ -9,7 +9,7 @@ package laboratorioherencia;
  *
  * @author Nacho
  */
-public class NoCulturalMonument extends MonumentoNacional{
+public class NoCulturalMonument extends MonumentoNacional implements EntriesIncome{
     private static final int TAX_COSTA_RICAN = 5000;
     private static final int TAX_FOREIGN = 6000;
     
@@ -29,10 +29,7 @@ public class NoCulturalMonument extends MonumentoNacional{
     public String toString() {
         return super.toString() + "NoCulturalMonument{" + "costaRicanVisitors=" + costaRicanVisitors + ", foreignVisitors=" + foreignVisitors + '}';
     }
-
-    
-    
-    
+ 
     
     public  double Costarican(){
         double result = TAX_COSTA_RICAN * costaRicanVisitors;

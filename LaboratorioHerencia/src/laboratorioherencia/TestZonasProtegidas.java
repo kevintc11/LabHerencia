@@ -11,6 +11,7 @@ package laboratorioherencia;
  */
 public class TestZonasProtegidas {
     public static void main(String[] args) {
+        ZonasProtegidas parque = new ParqueNacional("Carrillo", "Guanacaste", 0, 10, 15, 20);
         
     }
 }

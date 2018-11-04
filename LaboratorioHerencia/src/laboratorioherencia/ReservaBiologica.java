@@ -5,29 +5,34 @@
  */
 package laboratorioherencia;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author Kevin Trejos
  */
 public class ReservaBiologica extends ZonasProtegidas implements State{
-
+    private double anualAmount;
+    
     public ReservaBiologica() {
-        this("","",0);
+        this("","",0, 0.0);
     }
 
-    public ReservaBiologica(String name, String province, int income) {
-        super(name, province, income);
+    public ReservaBiologica(String name, String province, double montoFinal, double anualAmount) {
+        super(name, province, montoFinal);
+        this.anualAmount = anualAmount;
     }
 
     @Override
     public String toString() {
-        return "ReservaBiologica{"+ super.toString() + '}';
+        return "ReservaBiologica{"+ super.toString() + "anual amount:" + anualAmount + '}';
+    }
+
+    @Override
+    public double subvention() {
+        return anualAmount;
     }
     
-    public double calculateAmount(){
-        
+    public void calculateAmount(){
+        super.setMontoFinal(anualAmount);
     }
     
 }

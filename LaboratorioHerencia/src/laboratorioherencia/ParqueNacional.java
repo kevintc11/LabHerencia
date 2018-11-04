@@ -52,7 +52,5 @@ public class ParqueNacional extends ZonasProtegidas implements State, EntriesInc
     public void calculateAmount(){
         double finalResult = subvention() + Costarican() + Foreign();
         super.setMontoFinal(finalResult);
-    }
-    
-    
+    }    
 }

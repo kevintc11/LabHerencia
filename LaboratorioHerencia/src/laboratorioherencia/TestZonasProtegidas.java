@@ -7,10 +7,10 @@ package laboratorioherencia;
 
 /**
  *
- * @author Nacho
+ * @author Kevin Trejos
  */
-public interface EntriesIncome {
-    public abstract double Costarican();
-    public abstract double Foreign();
-    public abstract void calculateAmount();
+public class TestZonasProtegidas {
+    public static void main(String[] args) {
+        
+    }
 }

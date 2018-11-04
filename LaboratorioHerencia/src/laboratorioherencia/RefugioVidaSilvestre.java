@@ -15,7 +15,8 @@ public abstract class RefugioVidaSilvestre extends ZonasProtegidas{
         this("","",0);
     }
 
-    public RefugioVidaSilvestre(String name, String province, int income) {
-        super(name, province, income);
-    }    
+    public RefugioVidaSilvestre(String name, String province, double montoFinal) {
+        super(name, province, montoFinal);
+    }
+    
 }

@@ -35,8 +35,13 @@ public class List {
     }
     
     public void crecimiento(){
-        
+        ZonasProtegidas[] newArray = new ZonasProtegidas[INICIAL_POSITIONS * 2];
+        for (int i = 0; i < protectedAreas.length; i++) {
+            newArray[i] = protectedAreas[i];
+        }
+        protectedAreas = newArray;
     }
+    
     
     public void reporte1(){
         

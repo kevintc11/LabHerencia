@@ -11,5 +11,5 @@ package laboratorioherencia;
  */
 public interface InternationalEntities {
     public abstract double foreignContribution();
-    public abstract double calculateAmount();
+   public abstract void calculateAmount();
 }

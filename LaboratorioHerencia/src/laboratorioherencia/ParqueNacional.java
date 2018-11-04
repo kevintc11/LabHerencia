@@ -9,14 +9,24 @@ package laboratorioherencia;
  *
  * @author Kevin Trejos
  */
-public class ParqueNacional extends ZonasProtegidas {
-
+public class ParqueNacional extends ZonasProtegidas implements State, EntriesIncome{
+    private static final int TAX = 1200;
+    private static final int TAX_COSTA_RICAN = 5000;
+    private static final int TAX_FOREIGN = 6000;
+    
+    private int electricClients;
+    private int costaRicanVisitors;
+    private int foreignVisitors;
+    
     public ParqueNacional() {
-        this("","",0);
+        this("","",0,0,0,0);
     }
 
-    public ParqueNacional(String name, String province, int income) {
+    public ParqueNacional(String name, String province, int income, int electricClients, int costaRicanVisitors,int foreignVisitors) {
         super(name, province, income);
+        this.electricClients = electricClients;
+        this.costaRicanVisitors = costaRicanVisitors;
+        this.foreignVisitors = foreignVisitors;
     }
 
     @Override
@@ -24,6 +34,25 @@ public class ParqueNacional extends ZonasProtegidas {
         return "ParqueNacional{" + super.toString() +  '}';
     }
 
+    public double subvention(){
+        double result = TAX * electricClients;
+        return result;
+    }
+    
+    public  double Costarican(){
+        double result = TAX_COSTA_RICAN * costaRicanVisitors;
+        return result;
+    }
+    
+    public  double Foreign(){
+        double result = TAX_FOREIGN * foreignVisitors;
+        return result;
+    }
+    
+    public void calculateAmount(){
+        double finalResult = subvention() + Costarican() + Foreign();
+        super.setMontoFinal(finalResult);
+    }
     
     
 }

@@ -32,5 +32,15 @@ public class List {
         return "List{" + "listZonasProtegidas=" + listZonasProtegidas + '}';
     }
     
+    public void crecimiento(){
+        
+    }
     
+    public void reporte1(){
+        
+    }
+    
+    public void reporte2(){
+        
+    }
 }

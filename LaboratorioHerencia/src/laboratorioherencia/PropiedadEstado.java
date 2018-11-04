@@ -33,7 +33,7 @@ public class PropiedadEstado extends RefugioVidaSilvestre implements State{
     
     @Override
     public String toString() {
-        return "PropiedadEstado{"+ super.toString() + "fuelTaxes:" + fuelTaxes +'}';
+        return  super.toString() + "PropiedadEstado{" + "fuelTaxes:" + fuelTaxes +'}';
     }
 
     @Override

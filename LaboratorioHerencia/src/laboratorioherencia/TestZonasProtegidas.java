@@ -13,6 +13,7 @@ public class TestZonasProtegidas {
     public static void main(String[] args) {
         ParqueNacional parque = new ParqueNacional("Carrillo", "Guanacaste",10, 15, 20);
         parque.calculateAmount();
+        System.out.println(parque);
         NoCulturalMonument monumentoNoCultural = new NoCulturalMonument("No cultural", "San Pepe",15, 5);
         monumentoNoCultural.calculateAmount();
         System.out.println(monumentoNoCultural.toString());

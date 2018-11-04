@@ -18,5 +18,11 @@ public abstract class RefugioVidaSilvestre extends ZonasProtegidas{
     public RefugioVidaSilvestre(String name, String province) {
         super(name, province);
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "RefugioVidaSilvestre{" + '}';
+    }
+    
     
 }

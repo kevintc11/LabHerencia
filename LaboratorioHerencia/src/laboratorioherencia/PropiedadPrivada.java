@@ -32,7 +32,7 @@ public class PropiedadPrivada extends RefugioVidaSilvestre implements Internatio
     
     @Override
     public String toString() {
-        return "PropiedadPrivada{" + super.toString() + "noGovernamentalAid" + noGovernmentalAid + '}';
+        return super.toString() + "PropiedadPrivada{" + "noGovernamentalAid" + noGovernmentalAid + '}';
     }
 
     @Override

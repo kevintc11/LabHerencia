@@ -10,26 +10,28 @@ package laboratorioherencia;
  * @author Kevin Trejos
  */
 public class List {
-    private ZonasProtegidas[] listZonasProtegidas;
-
+    private ZonasProtegidas[] protectedAreas;
+    private static final int INICIAL_POSITIONS = 4;
+    
     public List() {
+        protectedAreas = new ZonasProtegidas[INICIAL_POSITIONS];
     }
 
     public List(ZonasProtegidas[] listZonasProtegidas) {
-        this.listZonasProtegidas = listZonasProtegidas;
+        this.protectedAreas = listZonasProtegidas;
     }
 
-    public ZonasProtegidas[] getListZonasProtegidas() {
-        return listZonasProtegidas;
+    public ZonasProtegidas[] getProtectedAreas() {
+        return protectedAreas;
     }
 
-    public void setListZonasProtegidas(ZonasProtegidas[] listZonasProtegidas) {
-        this.listZonasProtegidas = listZonasProtegidas;
+    public void setProtectedAreas(ZonasProtegidas[] protectedAreas) {
+        this.protectedAreas = protectedAreas;
     }
 
     @Override
     public String toString() {
-        return "List{" + "listZonasProtegidas=" + listZonasProtegidas + '}';
+        return "List{" + "listZonasProtegidas=" + protectedAreas + '}';
     }
     
     public void crecimiento(){

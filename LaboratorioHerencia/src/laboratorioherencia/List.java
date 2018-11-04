@@ -46,7 +46,9 @@ public class List {
     public String reporte1(){
         String print = " ";
         for (int i = 0; i < protectedAreas.length; i++) {
-            print = print +"\n"+ protectedAreas[i];
+            if (protectedAreas[i] != null) {
+                print = print +"\n"+ protectedAreas[i];
+            }
         }
         return print;
     }

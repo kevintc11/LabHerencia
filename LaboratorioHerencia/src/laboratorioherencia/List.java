@@ -50,4 +50,21 @@ public class List {
     public void reporte2(){
         
     }
+
+    public void agregar(ZonasProtegidas agregar){
+        int ingresados = 0;
+        if (protectedAreas.length-1 != ingresados) {
+            if (agregar != null) {
+                protectedAreas[ingresados] = agregar;
+                ingresados += 1;
+            }
+        }else{
+            crecimiento();
+            if (agregar != null) {
+                protectedAreas[ingresados] = agregar;
+                ingresados += 1;
+            }
+        }
+    }
+
 }

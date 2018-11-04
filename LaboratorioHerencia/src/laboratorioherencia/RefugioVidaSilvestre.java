@@ -21,7 +21,7 @@ public abstract class RefugioVidaSilvestre extends ZonasProtegidas{
 
     @Override
     public String toString() {
-        return super.toString() + "RefugioVidaSilvestre{" + '}';
+        return "RefugioVidaSilvestre{" + super.toString() +'}';
     }
     
     

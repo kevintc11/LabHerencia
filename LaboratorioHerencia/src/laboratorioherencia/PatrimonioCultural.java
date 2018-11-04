@@ -19,12 +19,13 @@ public class PatrimonioCultural extends MonumentoNacional implements EntriesInco
     private int pib;
     private int costaRicanVisitors;
     private int foreignVisitors;
+    private double finalAmount;
     
     public PatrimonioCultural() {
     }
 
-    public PatrimonioCultural(String name, String province, double montoFinal, int costaRicanVisitors,int foreignVisitors,int pib ) {
-        super(name, province, montoFinal);
+    public PatrimonioCultural(String name, String province, int costaRicanVisitors,int foreignVisitors,int pib ) {
+        super(name, province);
         this.costaRicanVisitors = costaRicanVisitors;
         this.foreignVisitors = foreignVisitors; 
         this.pib = pib;
@@ -55,9 +56,9 @@ public class PatrimonioCultural extends MonumentoNacional implements EntriesInco
         return result;
     }
     
-    public void calculateAmount(){
+    public double calculateAmount(){
         double result = Costarican() + Foreign() + foreignContribution();
-        super.setMontoFinal(result);
+        return finalAmount = result;
     }
     
 }

@@ -11,13 +11,14 @@ package laboratorioherencia;
  */
 public class ReservaBiologica extends ZonasProtegidas implements State{
     private double anualAmount;
+    private double finalAmount;
     
     public ReservaBiologica() {
-        this("","",0, 0.0);
+        this("","", 0.0);
     }
 
-    public ReservaBiologica(String name, String province, double montoFinal, double anualAmount) {
-        super(name, province, montoFinal);
+    public ReservaBiologica(String name, String province, double anualAmount) {
+        super(name, province);
         this.anualAmount = anualAmount;
     }
 
@@ -31,8 +32,9 @@ public class ReservaBiologica extends ZonasProtegidas implements State{
         return anualAmount;
     }
     
-    public void calculateAmount(){
-        super.setMontoFinal(anualAmount);
+    public double calculateAmount(){
+        double finalResult = subvention();
+        return finalAmount = finalResult;
     }
     
 }

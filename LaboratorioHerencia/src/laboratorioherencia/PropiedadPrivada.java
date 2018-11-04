@@ -11,13 +11,14 @@ package laboratorioherencia;
  */
 public class PropiedadPrivada extends RefugioVidaSilvestre implements InternationalEntities{
     private double noGovernmentalAid;
+    private double finalAmount;
             
     public PropiedadPrivada() {
-        this("","",0, 0.0);
+        this("","", 0.0);
     }
 
-    public PropiedadPrivada(String name, String province, double montoFinal, double noGovernamentalAid) {
-        super(name, province, montoFinal);
+    public PropiedadPrivada(String name, String province, double noGovernamentalAid) {
+        super(name, province);
         this.noGovernmentalAid = noGovernamentalAid;
     }
 
@@ -40,7 +41,8 @@ public class PropiedadPrivada extends RefugioVidaSilvestre implements Internatio
     }
 
     @Override
-    public void calculateAmount() {
-        super.setMontoFinal(noGovernmentalAid);
+    public double calculateAmount() {
+        double finalResult = foreignContribution();
+        return finalAmount = finalResult;
     }   
 }

@@ -17,13 +17,14 @@ public class ParqueNacional extends ZonasProtegidas implements State, EntriesInc
     private int electricClients;
     private int costaRicanVisitors;
     private int foreignVisitors;
+    private double finalAmount;
     
     public ParqueNacional() {
-        this("","",0,0,0,0);
+        this("","",0,0,0);
     }
 
-    public ParqueNacional(String name, String province, double montoFinal, int electricClients, int costaRicanVisitors,int foreignVisitors) {
-        super(name, province, montoFinal);
+    public ParqueNacional(String name, String province, int electricClients, int costaRicanVisitors,int foreignVisitors) {
+        super(name, province);
         this.electricClients = electricClients;
         this.costaRicanVisitors = costaRicanVisitors;
         this.foreignVisitors = foreignVisitors;
@@ -49,8 +50,8 @@ public class ParqueNacional extends ZonasProtegidas implements State, EntriesInc
         return result;
     }
     
-    public void calculateAmount(){
+    public double calculateAmount(){
         double finalResult = subvention() + Costarican() + Foreign();
-        super.setMontoFinal(finalResult);
+        return finalAmount = finalResult;
     }    
 }

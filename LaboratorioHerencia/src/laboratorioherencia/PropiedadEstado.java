@@ -12,13 +12,15 @@ package laboratorioherencia;
 public class PropiedadEstado extends RefugioVidaSilvestre implements State{
     private double fuelTaxes;
     private static final double TAX = 0.005;
+    private double finalAmount;
     
     public PropiedadEstado() {
-        this("","",0, 0.0);
+        this("","", 0.0);
     }
 
-    public PropiedadEstado(String name, String province, int income, double fuelTaxes) {
-        super(name, province, income);
+    public PropiedadEstado(String name, String province, double fuelTaxes) {
+        super(name, province);
+        this.fuelTaxes = fuelTaxes;
     }
 
     public double getFuelTaxes() {
@@ -41,9 +43,9 @@ public class PropiedadEstado extends RefugioVidaSilvestre implements State{
     }
 
     @Override
-    public void calculateAmount() {
+    public double calculateAmount() {
         double finalResult = subvention();
-        super.setMontoFinal(finalResult);
+        return finalAmount = finalResult;
     }
 
         

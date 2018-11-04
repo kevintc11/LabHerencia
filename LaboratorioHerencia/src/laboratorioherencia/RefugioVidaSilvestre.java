@@ -12,11 +12,11 @@ package laboratorioherencia;
 public abstract class RefugioVidaSilvestre extends ZonasProtegidas{
 
     public RefugioVidaSilvestre() {
-        this("","",0);
+        this("","");
     }
 
-    public RefugioVidaSilvestre(String name, String province, double montoFinal) {
-        super(name, province, montoFinal);
+    public RefugioVidaSilvestre(String name, String province) {
+        super(name, province);
     }
     
 }

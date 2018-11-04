@@ -12,16 +12,15 @@ package laboratorioherencia;
 public abstract class ZonasProtegidas {
     private String name;
     private String province;
-    private double montoFinal;
+
 
     public ZonasProtegidas() {
-        this("","",0);
+        this("","");
     }
 
-    public ZonasProtegidas(String name, String province, double montoFinal) {
+    public ZonasProtegidas(String name, String province) {
         this.name = name;
         this.province = province;
-        this.montoFinal = montoFinal;
     }
 
     public String getName() {
@@ -40,17 +39,12 @@ public abstract class ZonasProtegidas {
         this.province = province;
     }
 
-    public double getMontoFinal() {
-        return montoFinal;
-    }
-
-    public void setMontoFinal(double montoFinal) {
-        this.montoFinal = montoFinal;
-    }
-
     @Override
     public String toString() {
-        return "ZonasProtegidas{" + "name=" + name + ", province=" + province + ", montoFinal=" + montoFinal + '}';
+        return "ZonasProtegidas{" + "name=" + name + ", province=" + province + '}';
     }
+
+
+    
        
 }

@@ -15,12 +15,13 @@ public class NoCulturalMonument extends MonumentoNacional implements EntriesInco
     
     private int costaRicanVisitors;
     private int foreignVisitors;
+    private double finalAmount;
      
     public NoCulturalMonument() {
     }
 
-    public NoCulturalMonument(String name, String province, double montoFinal, int costaRicanVisitors,int foreignVisitors) {
-        super(name, province,  montoFinal);
+    public NoCulturalMonument(String name, String province, int costaRicanVisitors,int foreignVisitors) {
+        super(name, province);
         this.costaRicanVisitors = costaRicanVisitors;
         this.foreignVisitors = foreignVisitors; 
     }
@@ -41,9 +42,9 @@ public class NoCulturalMonument extends MonumentoNacional implements EntriesInco
         return result;
     }
     
-    public void calculateAmount(){
+    public double calculateAmount(){
         double result = Costarican() + Foreign();
-        super.setMontoFinal(result);
+        return finalAmount = result;
     }
     
     

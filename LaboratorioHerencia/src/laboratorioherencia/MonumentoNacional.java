@@ -14,8 +14,8 @@ public abstract class MonumentoNacional extends ZonasProtegidas{
     public MonumentoNacional() {
     }
 
-    public MonumentoNacional(String name, String province, double montoFinal) {
-        super(name, province, montoFinal);
+    public MonumentoNacional(String name, String province) {
+        super(name, province);
     }
 
     @Override

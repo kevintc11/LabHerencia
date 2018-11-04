@@ -12,5 +12,5 @@ package laboratorioherencia;
 public interface EntriesIncome {
     public abstract double Costarican();
     public abstract double Foreign();
-    public abstract void calculateAmount();
+    public abstract double calculateAmount();
 }

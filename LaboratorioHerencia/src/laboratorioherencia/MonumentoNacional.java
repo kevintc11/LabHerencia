@@ -9,6 +9,24 @@ package laboratorioherencia;
  *
  * @author Kevin Trejos
  */
-public class MonumentoNacional extends ZonasProtegidas{
+public abstract class MonumentoNacional extends ZonasProtegidas{
+
+    public MonumentoNacional() {
+    }
+
+    public MonumentoNacional(String name, String province, int income) {
+        super(name, province, income);
+    }
+
+    @Override
+    public String toString() {
+        return "MonumentoNacional{" + super.toString()+ '}';
+    }
+
+    @Override
+    public abstract int totalRevenues();
+
+    @Override
+    public abstract String information();
     
 }

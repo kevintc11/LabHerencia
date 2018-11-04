@@ -9,6 +9,13 @@ package laboratorioherencia;
  *
  * @author Kevin Trejos
  */
-public class RefugioVidaSilvestre extends ZonasProtegidas{
-    
+public abstract class RefugioVidaSilvestre extends ZonasProtegidas{
+
+    public RefugioVidaSilvestre() {
+        this("","",0);
+    }
+
+    public RefugioVidaSilvestre(String name, String province, int income) {
+        super(name, province, income);
+    }    
 }

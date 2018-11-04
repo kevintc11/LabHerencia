@@ -5,33 +5,31 @@
  */
 package laboratorioherencia;
 
-import java.util.logging.Logger;
-
 /**
  *
  * @author Kevin Trejos
  */
-public class PatrimonioCultural extends MonumentoNacional{
+public class PropiedadEstado extends RefugioVidaSilvestre{
 
-    public PatrimonioCultural() {
+    public PropiedadEstado() {
     }
 
-    public PatrimonioCultural(String name, String province, int income) {
+    public PropiedadEstado(String name, String province, int income) {
         super(name, province, income);
     }
 
     @Override
     public String toString() {
-        return "PatrimonioCultural{" + super.toString() + '}';
-    }
-
-    @Override
-    public int totalRevenues() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "PropiedadEstado{"+ super.toString() + '}';
     }
 
     @Override
     public String information() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int totalRevenues() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

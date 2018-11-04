@@ -5,11 +5,13 @@
  */
 package laboratorioherencia;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Kevin Trejos
  */
-public class ReservaBiologica extends ZonasProtegidas{
+public class ReservaBiologica extends ZonasProtegidas implements State{
 
     public ReservaBiologica() {
         this("","",0);
@@ -23,7 +25,9 @@ public class ReservaBiologica extends ZonasProtegidas{
     public String toString() {
         return "ReservaBiologica{"+ super.toString() + '}';
     }
-
     
+    public double calculateAmount(){
+        
+    }
     
 }

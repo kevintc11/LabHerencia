@@ -26,5 +26,8 @@ public class TestZonasProtegidas {
         PropiedadPrivada privada = new PropiedadPrivada("privado", "Guanacaste", 105060);
         privada.calculateAmount();
         System.out.println(privada);
+        
+        List list1 = new List();
+        list1.agregar(monumentoNoCultural);
     }
 }

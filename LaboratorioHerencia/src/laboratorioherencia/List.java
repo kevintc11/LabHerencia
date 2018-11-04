@@ -43,8 +43,12 @@ public class List {
     }
     
     
-    public void reporte1(){
-        
+    public String reporte1(){
+        String print = " ";
+        for (int i = 0; i < protectedAreas.length; i++) {
+            print = print +"\n"+ protectedAreas[i];
+        }
+        return print;
     }
     
     public void reporte2(){

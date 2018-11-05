@@ -9,9 +9,10 @@ package laboratorioherencia;
  *
  * @author Kevin Trejos
  */
-public class List {
+public class List{
     private ZonasProtegidas[] protectedAreas;
     private static final int INICIAL_POSITIONS = 4;
+    private int ingresados = 0;
     
     public List() {
         protectedAreas = new ZonasProtegidas[INICIAL_POSITIONS];
@@ -44,21 +45,29 @@ public class List {
     
     
     public String reporte1(){
+        double result =0;
         String print = " ";
         for (int i = 0; i < protectedAreas.length; i++) {
             if (protectedAreas[i] != null) {
                 print = print +"\n"+ protectedAreas[i];
             }
         }
-        return print;
+        
+        for (int i = 0; i < protectedAreas.length; i++) {
+            if (protectedAreas[i] != null) {
+                result = result + protectedAreas[i].calculateAmount();
+            }
+        }
+        
+        return print + "\n"+"La suma total es= "+result;
     }
     
     public void reporte2(){
         
+        
     }
 
     public void agregar(ZonasProtegidas agregar){
-        int ingresados = 0;
         if (protectedAreas.length-1 != ingresados) {
             if (agregar != null) {
                 protectedAreas[ingresados] = agregar;

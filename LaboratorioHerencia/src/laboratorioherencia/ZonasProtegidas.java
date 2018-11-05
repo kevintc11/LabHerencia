@@ -45,6 +45,6 @@ public abstract class ZonasProtegidas {
     }
 
 
-    
+    public abstract double calculateAmount();
        
 }

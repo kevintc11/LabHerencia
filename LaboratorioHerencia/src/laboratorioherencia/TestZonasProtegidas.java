@@ -29,6 +29,9 @@ public class TestZonasProtegidas {
         
         List list1 = new List();
         list1.agregar(monumentoNoCultural);
+        list1.agregar(parque);
         System.out.println(list1.reporte1());
+        
+        
     }
 }

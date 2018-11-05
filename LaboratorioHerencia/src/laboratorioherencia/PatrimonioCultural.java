@@ -6,7 +6,7 @@
 package laboratorioherencia;
 
 /**
- * 
+ * this class represents a national monument that is cultural heritage
  * 
  *@version 4/11/2018
  * @author Kevin Trejos

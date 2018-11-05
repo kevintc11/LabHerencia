@@ -6,7 +6,7 @@
 package laboratorioherencia;
 
 /**
- * 
+ * This is the test class
  * 
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora

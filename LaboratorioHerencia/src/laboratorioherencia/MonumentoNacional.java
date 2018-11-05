@@ -6,6 +6,8 @@
 package laboratorioherencia;
 
 /**
+ * this class represents a national monument
+ * 
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora
  */

@@ -6,7 +6,7 @@
 package laboratorioherencia;
 
 /**
- * 
+ * this class represents all the protected areas and what they have in common
  * 
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora

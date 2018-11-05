@@ -6,7 +6,7 @@
 package laboratorioherencia;
 
 /**
- * 
+ * this class represents people, whether Costa Ricans or foreigners who enter some protected areas
  * 
  *@version 04/11/2018
  * @author Kevin Trejos/Ignacio Zamora

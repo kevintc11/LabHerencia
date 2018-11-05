@@ -6,7 +6,7 @@
 package laboratorioherencia;
 
 /**
- * 
+ * this class represents a list where you store the different protected areas
  * 
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora

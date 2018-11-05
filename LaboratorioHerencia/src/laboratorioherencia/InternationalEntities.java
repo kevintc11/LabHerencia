@@ -6,7 +6,7 @@
 package laboratorioherencia;
 
 /**
- * 
+ * this class represents the international entities that give funds to the private wildlife refuges
  * 
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora

@@ -6,7 +6,7 @@
 package laboratorioherencia;
 
 /**
- * 
+ * this class represents the state which funds the national parks, the state wildlife refuges and the biological reserves
  * 
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora

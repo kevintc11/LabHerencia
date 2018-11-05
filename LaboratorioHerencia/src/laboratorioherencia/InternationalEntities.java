@@ -6,8 +6,10 @@
 package laboratorioherencia;
 
 /**
- *
- * @author Kevin Trejos
+ * 
+ * 
+ *@version 4/11/2018
+ * @author Kevin Trejos/Ignacio Zamora
  */
 public interface InternationalEntities {
     public abstract double foreignContribution();

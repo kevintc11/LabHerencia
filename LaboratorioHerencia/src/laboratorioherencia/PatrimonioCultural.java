@@ -5,10 +5,10 @@
  */
 package laboratorioherencia;
 
-import java.util.logging.Logger;
-
 /**
- *
+ * 
+ * 
+ *@version 4/11/2018
  * @author Kevin Trejos
  */
 public class PatrimonioCultural extends MonumentoNacional implements EntriesIncome,InternationalEntities{

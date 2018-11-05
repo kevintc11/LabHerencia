@@ -6,8 +6,10 @@
 package laboratorioherencia;
 
 /**
- *
- * @author Nacho
+ * 
+ * 
+ *@version 04/11/2018
+ * @author Kevin Trejos/Ignacio Zamora
  */
 public interface EntriesIncome {
     public abstract double Costarican();

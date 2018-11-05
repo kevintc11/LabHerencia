@@ -6,8 +6,10 @@
 package laboratorioherencia;
 
 /**
- *
- * @author Nacho
+ * 
+ * 
+ *@version 4/11/2018
+ * @author Ignacio Zamora/Kevin Trejos
  */
 public class NoCulturalMonument extends MonumentoNacional implements EntriesIncome{
     private static final int TAX_COSTA_RICAN = 5000;

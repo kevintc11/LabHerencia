@@ -6,8 +6,10 @@
 package laboratorioherencia;
 
 /**
- *
- * @author Kevin Trejos
+ * 
+ * 
+ *@version 4/11/2018
+ * @author Kevin Trejos/Ignacio Zamora
  */
 public class List{
     private ZonasProtegidas[] protectedAreas;
@@ -58,12 +60,10 @@ public class List{
                 result = result + protectedAreas[i].calculateAmount();
             }
         }
-        
         return print + "\n"+"La suma total es= "+result;
     }
     
     public void reporte2(){
-        
         
     }
 

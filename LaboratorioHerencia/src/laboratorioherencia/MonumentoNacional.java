@@ -6,8 +6,8 @@
 package laboratorioherencia;
 
 /**
- *
- * @author Kevin Trejos
+ *@version 4/11/2018
+ * @author Kevin Trejos/Ignacio Zamora
  */
 public abstract class MonumentoNacional extends ZonasProtegidas{
 

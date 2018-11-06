@@ -11,7 +11,7 @@ package laboratorioherencia;
  *@version 4/11/2018
  * @author Ignacio Zamora/Kevin Trejos
  */
-public class NoCulturalMonument extends MonumentoNacional implements EntriesIncome{
+public class NoCulturalMonument extends NationalMonument implements EntriesIncome{
     private static final int TAX_COSTA_RICAN = 5000;
     private static final int TAX_FOREIGN = 6000;
     
@@ -20,6 +20,7 @@ public class NoCulturalMonument extends MonumentoNacional implements EntriesInco
     private double finalAmount;
      
     public NoCulturalMonument() {
+        this("","",0,0);
     }
 
     public NoCulturalMonument(String name, String province, int costaRicanVisitors,int foreignVisitors) {
@@ -32,18 +33,26 @@ public class NoCulturalMonument extends MonumentoNacional implements EntriesInco
     public String toString() {
         return super.toString() + " NoCulturalMonument " + "Amount Income = " + calculateAmount();
     }
- 
-    
+    /**
+     * This method calculates amount in money for tickets sold to Costa Ricans
+     * @return total amount
+     */
     public  double Costarican(){
         double result = TAX_COSTA_RICAN * costaRicanVisitors;
         return result;
     }
-    
+    /**
+     * This method calculates amount in money for tickets sold to Foreign
+     * @return total amount
+     */
     public  double Foreign(){
         double result = TAX_FOREIGN * foreignVisitors;
         return result;
     }
-    
+    /**
+     * this method calculates the total amount of tickets sold
+     * @return total amount
+     */
     public double calculateAmount(){
         double result = Costarican() + Foreign();
         return finalAmount = result;

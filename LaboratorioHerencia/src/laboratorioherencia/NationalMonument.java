@@ -11,12 +11,13 @@ package laboratorioherencia;
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora
  */
-public abstract class MonumentoNacional extends ZonasProtegidas{
+public abstract class NationalMonument extends ProtectedAreas{
 
-    public MonumentoNacional() {
+    public NationalMonument() {
+        this("","");
     }
 
-    public MonumentoNacional(String name, String province) {
+    public NationalMonument(String name, String province) {
         super(name, province);
     }
 

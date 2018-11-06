@@ -12,23 +12,23 @@ package laboratorioherencia;
  * @author Kevin Trejos/Ignacio Zamora
  */
 public class List{
-    private ZonasProtegidas[] protectedAreas;
+    private ProtectedAreas[] protectedAreas;
     private static final int INICIAL_POSITIONS = 4;
-    private int ingresados = 0;
+    private int admitted = 0;
     
     public List() {
-        protectedAreas = new ZonasProtegidas[INICIAL_POSITIONS];
+        protectedAreas = new ProtectedAreas[INICIAL_POSITIONS];
     }
 
-    public List(ZonasProtegidas[] listZonasProtegidas) {
+    public List(ProtectedAreas[] listZonasProtegidas) {
         this.protectedAreas = listZonasProtegidas;
     }
 
-    public ZonasProtegidas[] getProtectedAreas() {
+    public ProtectedAreas[] getProtectedAreas() {
         return protectedAreas;
     }
 
-    public void setProtectedAreas(ZonasProtegidas[] protectedAreas) {
+    public void setProtectedAreas(ProtectedAreas[] protectedAreas) {
         this.protectedAreas = protectedAreas;
     }
 
@@ -36,17 +36,21 @@ public class List{
     public String toString() {
         return "List{" + "listZonasProtegidas=" + protectedAreas + '}';
     }
-    
-    public void crecimiento(){
-        ZonasProtegidas[] newArray = new ZonasProtegidas[INICIAL_POSITIONS * 2];
+    /**
+     * this method increases the size of the vector
+     */
+    private void growthVector(){
+        ProtectedAreas[] newArray = new ProtectedAreas[INICIAL_POSITIONS * 2];
         for (int i = 0; i < protectedAreas.length; i++) {
             newArray[i] = protectedAreas[i];
         }
         protectedAreas = newArray;
     }
-    
-    
-    public String reporte1(){
+    /**
+     * This method generates a report of the different protected areas
+     * @return a string with the information
+     */
+    public String report1(){
         double result =0;
         String print = " ";
         for (int i = 0; i < protectedAreas.length; i++) {
@@ -62,15 +66,18 @@ public class List{
         }
         return print + "\n"+"La suma total es= "+result;
     }
-    
-    public String reporte2(){
+    /**
+     * generates a report with the grant, the tickets and the non-governmental aid
+     * @return a string with the information
+     */
+    public String report2(){
         double subventionTotal = 0.0;
         double entrieTotal = 0.0;
         double noGubernamentalTotal = 0.0;
         for (int i = 0; i < protectedAreas.length; i++) {
             if (protectedAreas[i] != null) {
-                if(protectedAreas[i] instanceof ParqueNacional){
-                    ParqueNacional parque = (ParqueNacional)protectedAreas[i];
+                if(protectedAreas[i] instanceof NationalPark){
+                    NationalPark parque = (NationalPark)protectedAreas[i];
                     //parque.Costarican();
                     //parque.Foreign();
                     entrieTotal += parque.Costarican() +parque.Foreign();
@@ -80,53 +87,47 @@ public class List{
                     entrieTotal
                     noGubernamentalTotal
                     */
-                }else if(protectedAreas[i] instanceof ReservaBiologica){
-                    ReservaBiologica reserva = (ReservaBiologica)protectedAreas[i];
+                }else if(protectedAreas[i] instanceof BiologicalReserve){
+                    BiologicalReserve reserva = (BiologicalReserve)protectedAreas[i];
                     subventionTotal += reserva.subvention();
-                }else if(protectedAreas[i] instanceof PropiedadEstado){
-                    PropiedadEstado propiedad = (PropiedadEstado)protectedAreas[i];
+                }else if(protectedAreas[i] instanceof StateProperty){
+                    StateProperty propiedad = (StateProperty)protectedAreas[i];
                     subventionTotal+= propiedad.subvention();
-                }else if(protectedAreas[i] instanceof PropiedadPrivada){
-                    PropiedadPrivada propiedad = (PropiedadPrivada)protectedAreas[i];
+                }else if(protectedAreas[i] instanceof PrivateProperty){
+                    PrivateProperty propiedad = (PrivateProperty)protectedAreas[i];
                     noGubernamentalTotal += propiedad.foreignContribution();
                 }else if(protectedAreas[i] instanceof NoCulturalMonument){
                     NoCulturalMonument noCultural = (NoCulturalMonument)protectedAreas[i];
                     //noCultural.Costarican();
                     //noCultural.Foreign();
                     entrieTotal += noCultural.Costarican() + noCultural.Foreign();
-                }else if(protectedAreas[i] instanceof PatrimonioCultural){
-                    PatrimonioCultural cultural = (PatrimonioCultural)protectedAreas[i];
+                }else if(protectedAreas[i] instanceof CulturalHeritage){
+                    CulturalHeritage cultural = (CulturalHeritage)protectedAreas[i];
                     //cultural.Costarican();
                     //cultural.Foreign();
                     entrieTotal += cultural.Foreign() + cultural.Costarican();
                     noGubernamentalTotal += cultural.foreignContribution();
-                }
-               
-                            
-                   /*if (person instanceof Student) {
-                        Student student = (Student)person;
-                        System.out.println(student.getStudentId());
-                        //System.out.println(((Student)person).getStudentId());
-                    }*/
-             
-                
+                }   
             }
         }
         //Total Subetion = " + lavariableTotal
         return "Total subvention = " + subventionTotal + ", Entrie total = "+ entrieTotal + ", non-governmental aid = " + noGubernamentalTotal;
     }
-
-    public void agregar(ZonasProtegidas agregar){
-        if (protectedAreas.length-1 != ingresados) {
+    /**
+     * Enter the protected areas to the vector
+     * @param agregar the protected area to add
+     */
+    public void add(ProtectedAreas agregar){
+        if (protectedAreas.length-1 != admitted) {
             if (agregar != null) {
-                protectedAreas[ingresados] = agregar;
-                ingresados += 1;
+                protectedAreas[admitted] = agregar;
+                admitted += 1;
             }
         }else{
-            crecimiento();
+            growthVector();
             if (agregar != null) {
-                protectedAreas[ingresados] = agregar;
-                ingresados += 1;
+                protectedAreas[admitted] = agregar;
+                admitted += 1;
             }
         }
     }

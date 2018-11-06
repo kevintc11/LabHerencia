@@ -11,15 +11,15 @@ package laboratorioherencia;
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora
  */
-public class ReservaBiologica extends ZonasProtegidas implements State{
+public class BiologicalReserve extends ProtectedAreas implements State{
     private double anualAmount;
     private double finalAmount;
     
-    public ReservaBiologica() {
+    public BiologicalReserve() {
         this("","", 0.0);
     }
 
-    public ReservaBiologica(String name, String province, double anualAmount) {
+    public BiologicalReserve(String name, String province, double anualAmount) {
         super(name, province);
         this.anualAmount = anualAmount;
     }
@@ -28,12 +28,18 @@ public class ReservaBiologica extends ZonasProtegidas implements State{
     public String toString() {
         return  "ReservaBiologica{" + super.toString() + "Amount Income = " + calculateAmount() ;
     }
-
-    @Override
+ 
+    /**
+    * Calculate the amount you pay for the grant
+    * @return total amount
+    */
     public double subvention() {
         return anualAmount;
     }
-    
+    /**
+    * this method calculates the total amount of tickets sold
+    * @return total amount
+    */
     public double calculateAmount(){
         double finalResult = subvention();
         return finalAmount = finalResult;

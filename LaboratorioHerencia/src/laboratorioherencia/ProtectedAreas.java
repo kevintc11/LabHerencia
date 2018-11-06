@@ -11,16 +11,16 @@ package laboratorioherencia;
  *@version 4/11/2018
  * @author Kevin Trejos/Ignacio Zamora
  */
-public abstract class ZonasProtegidas {
+public abstract class ProtectedAreas {
     private String name;
     private String province;
 
 
-    public ZonasProtegidas() {
+    public ProtectedAreas() {
         this("","");
     }
 
-    public ZonasProtegidas(String name, String province) {
+    public ProtectedAreas(String name, String province) {
         this.name = name;
         this.province = province;
     }

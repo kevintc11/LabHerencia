@@ -64,32 +64,43 @@ public class List{
     }
     
     public void reporte2(){
+        double subventionTotal = 0.0;
+        double entrieTotal = 0.0;
+        double noGubernamentalTotal = 0.0;
         for (int i = 0; i < protectedAreas.length; i++) {
             if (protectedAreas[i] != null) {
                 if(protectedAreas[i] instanceof ParqueNacional){
                     ParqueNacional parque = (ParqueNacional)protectedAreas[i];
-                    parque.Costarican();
-                    parque.Foreign();
-                    parque.subvention();
-                        
+                    //parque.Costarican();
+                    //parque.Foreign();
+                    entrieTotal += parque.calculateAmount();
+                    noGubernamentalTotal += entrieTotal;
+                    subventionTotal += parque.subvention();
+                        /*
+                    subventioTotal
+                    entrieTotal
+                    noGubernamentalTotal
+                    */
                 }else if(protectedAreas[i] instanceof ReservaBiologica){
                     ReservaBiologica reserva = (ReservaBiologica)protectedAreas[i];
-                    reserva.subvention();
+                    subventionTotal += reserva.subvention();
                 }else if(protectedAreas[i] instanceof PropiedadEstado){
                     PropiedadEstado propiedad = (PropiedadEstado)protectedAreas[i];
-                    propiedad.subvention();
+                    subventionTotal+= propiedad.subvention();
                 }else if(protectedAreas[i] instanceof PropiedadPrivada){
                     PropiedadPrivada propiedad = (PropiedadPrivada)protectedAreas[i];
-                    propiedad.foreignContribution();
+                    noGubernamentalTotal += propiedad.foreignContribution();
                 }else if(protectedAreas[i] instanceof NoCulturalMonument){
                     NoCulturalMonument noCultural = (NoCulturalMonument)protectedAreas[i];
-                    noCultural.Costarican();
-                    noCultural.Foreign();
+                    //noCultural.Costarican();
+                    //noCultural.Foreign();
+                    entrieTotal += noCultural.calculateAmount();
                 }else if(protectedAreas[i] instanceof PatrimonioCultural){
                     PatrimonioCultural cultural = (PatrimonioCultural)protectedAreas[i];
-                    cultural.Costarican();
-                    cultural.Foreign();
-                    cultural.foreignContribution();
+                    //cultural.Costarican();
+                    //cultural.Foreign();
+                    entrieTotal += cultural.Foreign() + cultural.Costarican();
+                    noGubernamentalTotal += cultural.foreignContribution();
                 }
                
                             

@@ -13,7 +13,7 @@ package laboratorioherencia;
  */
 public interface State {
     
-   public abstract double subvention();
+   public abstract  double subvention();
    public abstract double calculateAmount();
     
 }

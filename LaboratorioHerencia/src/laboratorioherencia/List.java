@@ -64,7 +64,44 @@ public class List{
     }
     
     public void reporte2(){
-        
+        for (int i = 0; i < protectedAreas.length; i++) {
+            if (protectedAreas[i] != null) {
+                if(protectedAreas[i] instanceof ParqueNacional){
+                    ParqueNacional parque = (ParqueNacional)protectedAreas[i];
+                    parque.Costarican();
+                    parque.Foreign();
+                    parque.subvention();
+                        
+                }else if(protectedAreas[i] instanceof ReservaBiologica){
+                    ReservaBiologica reserva = (ReservaBiologica)protectedAreas[i];
+                    reserva.subvention();
+                }else if(protectedAreas[i] instanceof PropiedadEstado){
+                    PropiedadEstado propiedad = (PropiedadEstado)protectedAreas[i];
+                    propiedad.subvention();
+                }else if(protectedAreas[i] instanceof PropiedadPrivada){
+                    PropiedadPrivada propiedad = (PropiedadPrivada)protectedAreas[i];
+                    propiedad.foreignContribution();
+                }else if(protectedAreas[i] instanceof NoCulturalMonument){
+                    NoCulturalMonument noCultural = (NoCulturalMonument)protectedAreas[i];
+                    noCultural.Costarican();
+                    noCultural.Foreign();
+                }else if(protectedAreas[i] instanceof PatrimonioCultural){
+                    PatrimonioCultural cultural = (PatrimonioCultural)protectedAreas[i];
+                    cultural.Costarican();
+                    cultural.Foreign();
+                    cultural.foreignContribution();
+                }
+               
+                            
+                   /*if (person instanceof Student) {
+                        Student student = (Student)person;
+                        System.out.println(student.getStudentId());
+                        //System.out.println(((Student)person).getStudentId());
+                    }*/
+             
+                
+            }
+        }
     }
 
     public void agregar(ZonasProtegidas agregar){

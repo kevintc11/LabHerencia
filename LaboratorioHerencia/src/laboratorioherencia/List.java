@@ -63,7 +63,7 @@ public class List{
         return print + "\n"+"La suma total es= "+result;
     }
     
-    public void reporte2(){
+    public String reporte2(){
         double subventionTotal = 0.0;
         double entrieTotal = 0.0;
         double noGubernamentalTotal = 0.0;
@@ -113,6 +113,8 @@ public class List{
                 
             }
         }
+        //Total Subetion = " + lavariableTotal
+        return "Total subvention = " + subventionTotal + ", Entrie total = "+ entrieTotal + ", non-governmental aid = " + noGubernamentalTotal;
     }
 
     public void agregar(ZonasProtegidas agregar){

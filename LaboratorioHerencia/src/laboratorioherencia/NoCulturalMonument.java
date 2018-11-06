@@ -29,6 +29,30 @@ public class NoCulturalMonument extends NationalMonument implements EntriesIncom
         this.foreignVisitors = foreignVisitors; 
     }
 
+    public int getCostaRicanVisitors() {
+        return costaRicanVisitors;
+    }
+
+    public void setCostaRicanVisitors(int costaRicanVisitors) {
+        this.costaRicanVisitors = costaRicanVisitors;
+    }
+
+    public int getForeignVisitors() {
+        return foreignVisitors;
+    }
+
+    public void setForeignVisitors(int foreignVisitors) {
+        this.foreignVisitors = foreignVisitors;
+    }
+
+    public double getFinalAmount() {
+        return finalAmount;
+    }
+
+    public void setFinalAmount(double finalAmount) {
+        this.finalAmount = finalAmount;
+    }
+    
     @Override
     public String toString() {
         return super.toString() + " NoCulturalMonument " + ", Amount Income = " + calculateAmount();

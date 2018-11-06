@@ -32,6 +32,38 @@ public class NationalPark extends ProtectedAreas implements State, EntriesIncome
         this.foreignVisitors = foreignVisitors;
     }
 
+    public int getElectricClients() {
+        return electricClients;
+    }
+
+    public void setElectricClients(int electricClients) {
+        this.electricClients = electricClients;
+    }
+
+    public int getCostaRicanVisitors() {
+        return costaRicanVisitors;
+    }
+
+    public void setCostaRicanVisitors(int costaRicanVisitors) {
+        this.costaRicanVisitors = costaRicanVisitors;
+    }
+
+    public int getForeignVisitors() {
+        return foreignVisitors;
+    }
+
+    public void setForeignVisitors(int foreignVisitors) {
+        this.foreignVisitors = foreignVisitors;
+    }
+
+    public double getFinalAmount() {
+        return finalAmount;
+    }
+
+    public void setFinalAmount(double finalAmount) {
+        this.finalAmount = finalAmount;
+    }
+    
     @Override
     public String toString() {
         return "ParqueNacional{" + super.toString() + ", Amount Income = " + calculateAmount() + '}';

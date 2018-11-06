@@ -32,6 +32,38 @@ public class CulturalHeritage extends NationalMonument implements EntriesIncome,
         this.pib = pib;           
     }
 
+    public int getPib() {
+        return pib;
+    }
+
+    public void setPib(int pib) {
+        this.pib = pib;
+    }
+
+    public int getCostaRicanVisitors() {
+        return costaRicanVisitors;
+    }
+
+    public void setCostaRicanVisitors(int costaRicanVisitors) {
+        this.costaRicanVisitors = costaRicanVisitors;
+    }
+
+    public int getForeignVisitors() {
+        return foreignVisitors;
+    }
+
+    public void setForeignVisitors(int foreignVisitors) {
+        this.foreignVisitors = foreignVisitors;
+    }
+
+    public double getFinalAmount() {
+        return finalAmount;
+    }
+
+    public void setFinalAmount(double finalAmount) {
+        this.finalAmount = finalAmount;
+    }
+    
     @Override
     public String toString() {
         return super.toString() + "PatrimonioCultural" + ", Amount Income = " + calculateAmount();

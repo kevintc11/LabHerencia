@@ -24,6 +24,22 @@ public class BiologicalReserve extends ProtectedAreas implements State{
         this.anualAmount = anualAmount;
     }
 
+    public double getAnualAmount() {
+        return anualAmount;
+    }
+
+    public void setAnualAmount(double anualAmount) {
+        this.anualAmount = anualAmount;
+    }
+
+    public double getFinalAmount() {
+        return finalAmount;
+    }
+
+    public void setFinalAmount(double finalAmount) {
+        this.finalAmount = finalAmount;
+    }
+    
     @Override
     public String toString() {
         return  "ReservaBiologica{" + super.toString() + ", Amount Income = " + calculateAmount() ;

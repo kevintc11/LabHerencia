@@ -13,26 +13,29 @@ package laboratorioherencia;
  */
 public class TestProtectedAreas {
     public static void main(String[] args) {
-        NationalPark parque = new NationalPark("Carrillo", "Guanacaste",10, 15, 20);
-        parque.calculateAmount();
-        System.out.println(parque);
-        NoCulturalMonument monumentoNoCultural = new NoCulturalMonument("No cultural", "San Pepe",15, 5);
-        monumentoNoCultural.calculateAmount();
-        System.out.println(monumentoNoCultural.toString());
-        CulturalHeritage patrimonio = new CulturalHeritage("Guayabo", "No sé", 20, 12, 2010000000);
-        patrimonio.calculateAmount();
-        System.out.println(patrimonio);
-        StateProperty estado = new StateProperty("jsndd", "Alajuela", 149898);
-        estado.calculateAmount();
-        System.out.println(estado);
-        PrivateProperty privada = new PrivateProperty("privado", "Guanacaste", 105060);
-        privada.calculateAmount();
-        System.out.println(privada);
+        NationalPark park = new NationalPark("Carrillo", "Guanacaste",10, 15, 20);
+        
+        NoCulturalMonument monumentNoCultural = new NoCulturalMonument("A los presentes", "San Jose",15, 5);
+        
+        CulturalHeritage monumentCultural = new CulturalHeritage("Guayabo", "Cartago", 20, 12, 2010000000);
+        
+        StateProperty stateRefuge = new StateProperty("Caño negro", "Alajuela", 149898);
+        
+        PrivateProperty privateRefuge = new PrivateProperty("Ostional", "Guanacaste", 105060);
+       
+        BiologicalReserve reserve = new BiologicalReserve("Alberto Manuel Brenes", "Alajuela", 50000);
+       
+        
         
         List list1 = new List();
-        list1.add(monumentoNoCultural);
-        list1.add(parque);
-
+        list1.add(park);
+        list1.add(monumentNoCultural);
+        list1.add(monumentCultural);
+        list1.add(stateRefuge);
+        list1.add(privateRefuge);
+        list1.add(reserve);
+        System.out.println(list1.report1());
+        System.out.println(list1.report2());
         
     }
 }

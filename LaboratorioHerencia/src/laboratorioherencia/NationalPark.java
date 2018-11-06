@@ -34,7 +34,7 @@ public class NationalPark extends ProtectedAreas implements State, EntriesIncome
 
     @Override
     public String toString() {
-        return "ParqueNacional{" + super.toString() + "monto final = " + calculateAmount() + '}';
+        return "ParqueNacional{" + super.toString() + ", Amount Income = " + calculateAmount() + '}';
     }   
     /**
      * Calculate the amount you pay for the grant

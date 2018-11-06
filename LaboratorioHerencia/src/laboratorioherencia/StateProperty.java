@@ -35,7 +35,7 @@ public class StateProperty extends WildlifeRefuge implements State{
     
     @Override
     public String toString() {
-        return  super.toString() + "PropiedadEstado{" + "amount income = " + calculateAmount() + '}';
+        return  super.toString() + "PropiedadEstado{" + ", Amount income = " + calculateAmount() + '}';
     }
     /**
     * Calculate the amount you pay for the grant

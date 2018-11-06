@@ -26,7 +26,7 @@ public class BiologicalReserve extends ProtectedAreas implements State{
 
     @Override
     public String toString() {
-        return  "ReservaBiologica{" + super.toString() + "Amount Income = " + calculateAmount() ;
+        return  "ReservaBiologica{" + super.toString() + ", Amount Income = " + calculateAmount() ;
     }
  
     /**

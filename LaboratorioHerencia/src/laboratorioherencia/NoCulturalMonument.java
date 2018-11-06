@@ -31,7 +31,7 @@ public class NoCulturalMonument extends NationalMonument implements EntriesIncom
 
     @Override
     public String toString() {
-        return super.toString() + " NoCulturalMonument " + "Amount Income = " + calculateAmount();
+        return super.toString() + " NoCulturalMonument " + ", Amount Income = " + calculateAmount();
     }
     /**
      * This method calculates amount in money for tickets sold to Costa Ricans

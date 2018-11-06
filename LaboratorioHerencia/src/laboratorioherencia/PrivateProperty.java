@@ -34,7 +34,7 @@ public class PrivateProperty extends WildlifeRefuge implements InternationalEnti
     
     @Override
     public String toString() {
-        return super.toString() + "PropiedadPrivada{" + "amount income" + calculateAmount() + '}';
+        return super.toString() + "PropiedadPrivada{" + ", Amount income" + calculateAmount() + '}';
     }
     /**
     * This method calculates the contribution by private companies

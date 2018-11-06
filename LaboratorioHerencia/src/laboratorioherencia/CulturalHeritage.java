@@ -34,7 +34,7 @@ public class CulturalHeritage extends NationalMonument implements EntriesIncome,
 
     @Override
     public String toString() {
-        return super.toString() + "PatrimonioCultural" + "Amount Income = " + calculateAmount();
+        return super.toString() + "PatrimonioCultural" + ", Amount Income = " + calculateAmount();
     }
      /**
      * This method calculates amount in money for tickets sold to Costa Ricans

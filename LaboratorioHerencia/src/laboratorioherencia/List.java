@@ -99,7 +99,7 @@ public class List{
                 }   
             }
         }
-        return "Total subvention = " + subventionTotal + ", Entrie total = "+ entrieTotal + ", non-governmental aid = " + noGubernamentalTotal;
+        return "Total subvention = " + subventionTotal + ", Entrie total = "+ entrieTotal + ", Non-governmental aid = " + noGubernamentalTotal;
     }
     /**
      * Enter the protected areas to the vector

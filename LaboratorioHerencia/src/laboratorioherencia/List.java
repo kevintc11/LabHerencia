@@ -78,15 +78,8 @@ public class List{
             if (protectedAreas[i] != null) {
                 if(protectedAreas[i] instanceof NationalPark){
                     NationalPark parque = (NationalPark)protectedAreas[i];
-                    //parque.Costarican();
-                    //parque.Foreign();
                     entrieTotal += parque.Costarican() +parque.Foreign();
                     subventionTotal += parque.subvention();
-                        /*
-                    subventioTotal
-                    entrieTotal
-                    noGubernamentalTotal
-                    */
                 }else if(protectedAreas[i] instanceof BiologicalReserve){
                     BiologicalReserve reserva = (BiologicalReserve)protectedAreas[i];
                     subventionTotal += reserva.subvention();
@@ -98,19 +91,14 @@ public class List{
                     noGubernamentalTotal += propiedad.foreignContribution();
                 }else if(protectedAreas[i] instanceof NoCulturalMonument){
                     NoCulturalMonument noCultural = (NoCulturalMonument)protectedAreas[i];
-                    //noCultural.Costarican();
-                    //noCultural.Foreign();
                     entrieTotal += noCultural.Costarican() + noCultural.Foreign();
                 }else if(protectedAreas[i] instanceof CulturalHeritage){
                     CulturalHeritage cultural = (CulturalHeritage)protectedAreas[i];
-                    //cultural.Costarican();
-                    //cultural.Foreign();
                     entrieTotal += cultural.Foreign() + cultural.Costarican();
                     noGubernamentalTotal += cultural.foreignContribution();
                 }   
             }
         }
-        //Total Subetion = " + lavariableTotal
         return "Total subvention = " + subventionTotal + ", Entrie total = "+ entrieTotal + ", non-governmental aid = " + noGubernamentalTotal;
     }
     /**
